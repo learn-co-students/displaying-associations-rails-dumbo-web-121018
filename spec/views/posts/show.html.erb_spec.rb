@@ -11,8 +11,5 @@ RSpec.describe "posts/show", type: :feature do
     expect(page).to have_css("p", text: "My post desc")
   end
 
-  it "contains a link to the post's category" do
-    visit post_path(@post)
-    expect(page).to have_link(@category.name, href: category_path(@category))
-  end
+
 end
